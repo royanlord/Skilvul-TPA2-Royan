@@ -11,9 +11,26 @@
     <main>
         <section id="bmi-calc">
             <div class="container">
-                <div class="headline">
-                    <h1>BMI Calculator</h1>
-                    <p>BMI Calculator dapat membantu anda menghitung Indeks Massa Tubuh (IMT) dan mengecek seberapa ideal berat badan anda.</p>
+                <div class="container-headline">
+                    <div class="headline">
+                        <h1>BMI Calculator</h1>
+                        <p>BMI Calculator dapat membantu anda menghitung Indeks Massa Tubuh (IMT) dan mengecek seberapa ideal berat badan anda.</p>
+                    </div>
+                </div>
+                <div class="container-content">
+                    <div class="content">
+                        <form id="form-field">
+                            <div class="height">
+                                <label class="label" for="height">How your height?</label><br/>
+                                <input type="text" name="height" id="height-field" placeholder="Your Height"><br/>
+                            </div>
+                            <div class="weight">
+                                <label for="weight">How your weight?</label><br/>
+                                <input type="text" name="weight" id="weight-field" placeholder="Your Weight">
+                            </div>
+                            <button type="submit">Calculate BMI</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
