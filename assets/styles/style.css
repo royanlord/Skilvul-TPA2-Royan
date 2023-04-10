@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+#bmi-calc {
+    display: flex;
+    justify-content: center;
+}
+
+#bmi-calc .container {
+    margin-top: 10vh;
+    width: 70%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F6F1F1;
+    border-radius: 15px;
+}
+
+#bmi-calc .container .headline {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+#bmi-calc .container .headline p {
+    text-align: center;
+    margin-top: 5px;
+}
