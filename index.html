@@ -21,14 +21,16 @@
                     <div class="content">
                         <form id="form-field">
                             <div class="height">
-                                <label class="label" for="height">How your height?</label><br/>
+                                <label class="label" for="height">Height (cm)</label><br/>
                                 <input type="number" name="height" id="height-field" placeholder="Your Height"><br/>
+                                <div id="warning-height"></div>
                             </div>
                             <div class="weight">
-                                <label for="weight">How your weight?</label><br/>
+                                <label for="weight">Weight (kg)</label><br/>
                                 <input type="number" name="weight" id="weight-field" placeholder="Your Weight">
+                                <div id="warning-weight"></div>
                             </div>
-                            <button type="submit">Calculate BMI</button>
+                            <button type="submit" id="btn-calc">Calculate BMI</button>
                         </form>
                     </div>
                 </div>
