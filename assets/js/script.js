@@ -20,14 +20,31 @@ const displayBMI = () => {
     firstResult.innerText = `${hasilHitung}`
     secondResult.innerText = `${hasilHitung}`
 
-    if (hasilHitung >= 30) {
-        displayDetail.innerText = "Obesity"
+    if (hasilHitung >= 35) {
+        displayDetail.innerText = "Obesity 2"
+        firstResult.style.color = "#ff4700"
+        secondResult.style.color = "#ff4700"
+        displayDetail.style.color = "#ff4700"
+    } else if (hasilHitung <= 34.9 && hasilHitung >= 30 ) {
+        displayDetail.innerText = "Obesity 1"
+        firstResult.style.color = "#feb800"
+        secondResult.style.color = "#feb800"
+        displayDetail.style.color = "#feb800"
     } else if (hasilHitung <= 29.9 && hasilHitung >= 25) {
         displayHasil.innerText = "Overweight"
+        firstResult.style.color = "#9ec12f"
+        secondResult.style.color = "#9ec12f"
+        displayDetail.style.color = "#9ec12f"
     } else if (hasilHitung <= 24.9 && hasilHitung >= 18.5) {
         displayDetail.innerText = "Normal"
+        firstResult.style.color = "#49b47c"
+        secondResult.style.color = "#49b47c"
+        displayDetail.style.color = "#49b47c"
     } else {
         displayDetail.innerText = "Underweight"
+        firstResult.style.color = "#4392d4"
+        secondResult.style.color = "#4392d4"
+        displayDetail.style.color = "#4392d4"
     }
 }
 
