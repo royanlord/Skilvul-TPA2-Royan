@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <section id="bmi-calc">
+        <section id="bmi-calc" class="display-calc">
             <div class="container">
                 <div class="container-headline">
                     <div class="headline">
@@ -32,6 +32,24 @@
                             </div>
                             <button type="submit" id="btn-calc">Calculate BMI</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bmi-result" class="display-result">
+            <div class="container">
+                <div class="container-headline">
+                    <h1>Your BMI <span class="first-result"></span></h1>
+                </div>
+                <div class="container-content">
+                    <div class="content">
+                        <img src="assets/styles/images/bmi.jpg" alt="bmi" height="400px">
+                        <div class="desc">
+                            <h3>Your BMI is <span class="second-result"></span></h3>
+                            <h4>Which means you are <span class="detail"></span></h4>
+                            <!-- <p class="desc-hasil"></p> -->
+                        </div>
                     </div>
                 </div>
             </div>
