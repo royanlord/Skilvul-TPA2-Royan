@@ -9,18 +9,23 @@
 
 html, body {
     width: 100%;
+    background-color: #f9fbfd;
 }
 
 #bmi-calc {
     display: flex;
     justify-content: center;
+    /* background-color: #576CBC; */
+    height: 100vh;
 }
 
 #bmi-calc .container {
     margin-top: 10vh;
-    width: 70%;
+    width: 60%;
     height: 75vh;
-    background-color: #F6F1F1;
+    /* background-color: #F6F1F1; */
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
@@ -52,23 +57,23 @@ html, body {
 }
 
 #bmi-calc .container .content {
-    /* background-color: aqua; */
+    /* background-color: red; */
     width: 70%;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
 }
 
 #bmi-calc .container .content form {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin: 20px 40px;
-    width: 90%;
+    /* margin: 20px 40px; */
+    width: 70%;
     /* background-color: aqua; */
 }
 
 #bmi-calc .container .content label {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 #bmi-calc .container .content input {
@@ -77,8 +82,8 @@ html, body {
     margin-top: 8px;
     border: none;
     border-radius: 8px;
-    width: 55%;
-    padding: 15px 20px;
+    width: 100%;
+    padding: 13px 20px;
     font-size: 1rem;
 }
 
@@ -97,3 +102,12 @@ html, body {
 #bmi-calc .container .content input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
+
+#bmi-calc .container .content #warning-height, #warning-weight {
+    font-size: 0.8rem;
+    margin-top: 7px;
+    color: red;
+}
+
+
+
