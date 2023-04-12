@@ -111,3 +111,38 @@ html, body {
 
 
 
+/* result */
+#bmi-result {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#bmi-result .container {
+    margin-top: 10vh;
+    width: 60%;
+    height: 90vh;
+    /* background-color: #F6F1F1; */
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* headline */
+#bmi-result .container .container-headline {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#bmi-result .container .container-content {
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#bmi-result .container .container-content .desc {
+    border: 1px solid #B9EDDD;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
