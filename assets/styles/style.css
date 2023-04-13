@@ -120,8 +120,10 @@ html, body {
 
 #bmi-result .container {
     margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-bottom: 25px;
     width: 60%;
-    height: 90vh;
+    height: auto;
     /* background-color: #F6F1F1; */
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -135,14 +137,55 @@ html, body {
     justify-content: center;
 }
 
+#bmi-result .container .container-headline h1 {
+    font-size: 2rem;
+}
+
 #bmi-result .container .container-content {
-    margin: 0 30px;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bmi-result .container .container-content .button-cek {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
 
+#bmi-result .container .container-content #re-check {
+    border: none;
+    cursor: pointer;
+    width: 240px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #576CBC;
+    color: #ffffff;
+    font-weight: 600;
+}
+
 #bmi-result .container .container-content .desc {
-    border: 1px solid #B9EDDD;
+    border: 2px solid #B9EDDD;
     border-radius: 5px;
     padding: 20px 20px;
+}
+
+#bmi-result .container .container-content .desc h3, h4 {
+    font-size: 1.5rem;
+}
+
+#bmi-result .container .container-content .desc .desc-hasil {
+    margin-top: 15px;
+}
+
+#bmi-result .container .container-content .desc .desc-hasil ul {
+    margin-top: 13px;
+}
+
+#bmi-result .container .container-content .desc .desc-hasil li {
+    /* font-size: 0.9rem; */
+    margin-left: 20px;
+    margin-bottom: 13px;
 }
