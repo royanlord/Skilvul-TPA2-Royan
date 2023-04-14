@@ -6,7 +6,7 @@ let btnCalc = document.getElementById("btn-calc")
 const hitungBMI = () => {
     let heightVal = inputHeight.value
     let weightVal = inputWeight.value
-    let calc = weightVal / ((heightVal/100)**2)
+    let calc = weightVal / Math.pow(heightVal/100, 2)
     rounding = calc.toFixed(1)
     return rounding
 }
@@ -27,9 +27,9 @@ const displayBMI = () => {
         secondResult.style.color = "#ff4700"
         displayDetail.style.color = "#ff4700"
         listDetail.innerHTML =  `
-            <li>Jaga pola makan dengan mengurangi makanan tinggi gula dan tinggi lemak untuk mencapai berat badan ideal</li>
-            <li>Tingkatkan aktivitas dan berolahraga secara teratur</li>
-            <li>Lakukan pola hidup sehat (tidak merokok, tidak minum beralkohol)</li>
+            <li>Maintain your diet by reducing high-sugar and high-fat foods to achieve ideal body weight</li>
+            <li>Increase activity and exercise regularly</li>
+            <li>Follow a healthy lifestyle (don't smoke, don't drink alcohol)</li>
         `
     } else if (hasilHitung <= 34.9 && hasilHitung >= 30 ) {
         displayDetail.innerText = "Obesity 1"
@@ -37,9 +37,9 @@ const displayBMI = () => {
         secondResult.style.color = "#feb800"
         displayDetail.style.color = "#feb800"
         listDetail.innerHTML =  `
-            <li>Jaga pola makan dengan mengurangi makanan tinggi gula dan tinggi lemak untuk mencapai berat badan ideal</li>
-            <li>Tingkatkan aktivitas dan berolahraga secara teratur</li>
-            <li>Lakukan pola hidup sehat (tidak merokok, tidak minum beralkohol)</li>
+            <li>Maintain your diet by reducing high-sugar and high-fat foods to achieve ideal body weight</li>
+            <li>Increase activity and exercise regularly</li>
+            <li>Follow a healthy lifestyle (don't smoke, don't drink alcohol)</li>
         `
     } else if (hasilHitung <= 29.9 && hasilHitung >= 25) {
         displayDetail.innerText = "Overweight"
@@ -47,9 +47,9 @@ const displayBMI = () => {
         secondResult.style.color = "#9ec12f"
         displayDetail.style.color = "#9ec12f"
         listDetail.innerHTML =  `
-            <li>Jaga pola makan dengan mengurangi makanan tinggi gula dan tinggi lemak untuk mencapai berat badan ideal</li>
-            <li>Tingkatkan aktivitas dan berolahraga secara teratur</li>
-            <li>Lakukan pola hidup sehat (tidak merokok, tidak minum beralkohol)</li>
+            <li>Maintain your diet by reducing high-sugar and high-fat foods to achieve ideal body weight</li>
+            <li>Increase activity and exercise regularly</li>
+            <li>Follow a healthy lifestyle (don't smoke, don't drink alcohol)</li>
         `
     } else if (hasilHitung <= 24.9 && hasilHitung >= 18.5) {
         displayDetail.innerText = "Normal"
@@ -57,8 +57,8 @@ const displayBMI = () => {
         secondResult.style.color = "#49b47c"
         displayDetail.style.color = "#49b47c"
         listDetail.innerHTML =  `
-            <li>Pertahankan pola makan saat ini agar tetap dalam kondisi optimal</li>
-            <li>Untuk mempertahankan BMI normal, lakukan aktifitas fisik 3 kali dalam seminggu</li>
+            <li>Maintain the current diet to keep it in optimal condition</li>
+            <li>To maintain a normal BMI, do physical activity 3 times a week</li>
         `
     } else {
         displayDetail.innerText = "Underweight"
@@ -66,9 +66,9 @@ const displayBMI = () => {
         secondResult.style.color = "#4392d4"
         displayDetail.style.color = "#4392d4"
         listDetail.innerHTML =  `
-            <li>Tingkatkan konsumsi protein untuk mencapai berat badan ideal</li>
-            <li>Untuk mencapai berat badan ideal kamu perlu makan makanan bergizi dan tingkatkan frekuensi makan</li>
-            <li>Tingkatkan aktivitas dan berolahraga secara teratur, dan lakukan pola hidup sehat</li>
+            <li>Increase protein consumption to achieve ideal body weight</li>
+            <li>To achieve ideal body weight you need to eat nutritious food and increase the frequency of eating</li>
+            <li>Increase activity and exercise regularly, and adopt a healthy lifestyle</li>
         `
     }
 }
