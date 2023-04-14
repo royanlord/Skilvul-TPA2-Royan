@@ -80,19 +80,24 @@ const validateForm = () => {
     let calc = document.getElementById("bmi-calc")
     let result = document.getElementById("bmi-result")
 
-    if (heightVal !== "" && weightVal !== "") {
+
+    if (heightVal !== "" && heightVal.length >= 3 && weightVal !== "" && weightVal.length >= 2) {
         displayBMI()
         calc.style.display = "none"
         result.style.display = "flex"
     } else {
         if (heightVal === "") {
-            document.getElementById("warning-height").innerText = "Tinggi tidak boleh kosong!"
-        } else if (heightVal !== "") {
+            document.getElementById("warning-height").innerText = "Please complete your height!"
+        } else if (heightVal !== "" && heightVal.length < 3) {
+            document.getElementById("warning-height").innerText = "Please complete with a minimum 3 digit number"
+        } else if (heightVal !== "" && heightVal.length >= 3) {
             document.getElementById("warning-height").innerText = ""
         }
         if (weightVal === "") {
-            document.getElementById("warning-weight").innerText = "Berat tidak boleh kosong!"
-        } else if (weightVal !== "") {
+            document.getElementById("warning-weight").innerText = "Please complete your weight!"
+        } else if (weightVal !== "" && weightVal.length < 2) {
+            document.getElementById("warning-weight").innerText = "Please complete with a minimum 2 digit number"
+        } else if (weightVal !== "" && weightVal.length >= 2) {
             document.getElementById("warning-weight").innerText = ""
         }
     }
