@@ -103,6 +103,14 @@ html, body {
     border: none;
 }
 
+#bmi-calc .container .content button:hover {
+    background-color: #617ff8;
+}
+
+#bmi-calc .container .content button:active {
+    background-color: #49599c;
+}
+
 #bmi-calc .container .content input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
@@ -158,7 +166,7 @@ html, body {
     justify-content: center;
 }
 
-#bmi-result .container .container-content #re-check {
+#bmi-result .container .container-content button {
     border: none;
     cursor: pointer;
     width: 240px;
@@ -168,6 +176,14 @@ html, body {
     background-color: #576CBC;
     color: #ffffff;
     font-weight: 600;
+}
+
+#bmi-result .container .container-content button:hover {
+    background-color: #617ff8;
+}
+
+#bmi-result .container .container-content button:active {
+    background-color: #49599c;
 }
 
 #bmi-result .container .container-content .desc {
