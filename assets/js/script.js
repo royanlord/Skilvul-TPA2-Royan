@@ -87,16 +87,16 @@ const validateForm = () => {
         result.style.display = "flex"
     } else {
         if (heightVal === "") {
-            document.getElementById("warning-height").innerText = "Please complete your height!"
+            document.getElementById("warning-height").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please complete your height!`
         } else if (heightVal !== "" && heightVal.length < 3) {
-            document.getElementById("warning-height").innerText = "Please complete with a minimum 3 digit number"
+            document.getElementById("warning-height").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please complete with a minimum 3 digit number`
         } else if (heightVal !== "" && heightVal.length >= 3) {
             document.getElementById("warning-height").innerText = ""
         }
         if (weightVal === "") {
-            document.getElementById("warning-weight").innerText = "Please complete your weight!"
+            document.getElementById("warning-weight").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please complete your weight!`
         } else if (weightVal !== "" && weightVal.length < 2) {
-            document.getElementById("warning-weight").innerText = "Please complete with a minimum 2 digit number"
+            document.getElementById("warning-weight").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please complete with a minimum 2 digit number`
         } else if (weightVal !== "" && weightVal.length >= 2) {
             document.getElementById("warning-weight").innerText = ""
         }
