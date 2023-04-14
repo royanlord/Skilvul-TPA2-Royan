@@ -43,6 +43,10 @@ html, body {
     width: 50%;
 }
 
+#bmi-calc .container .headline h1 {
+    font-size: 2rem;
+}
+
 #bmi-calc .container .headline p {
     text-align: center;
     margin-top: 5px;
